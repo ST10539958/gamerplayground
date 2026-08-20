@@ -1,6 +1,6 @@
 # GamerPlayground - Physical Media E-Commerce Prototype
 
-An academic web development assignment showcasing a pure semantic HTML structure for an e-commerce platform dedicated exclusively to physical gaming hard discs.
+Website for an e-commerce platform dedicated exclusively to physical gaming hard discs.
 
 ---
 ## 0. KULANI ARNOLD NGOBENI ST10539958 
