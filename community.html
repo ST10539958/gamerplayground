@@ -2,75 +2,79 @@
 <html lang="en">    
 <head>
     <title>Community and Trade-ins</title>
-      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header Section -->
-  <header>
-    <img src="images/banner.jpg" alt="GamerPlayground Banner" class="banner" width="100%" height="300">
-    <!-- Navigation Menu for navigation to other pages -->
-    <nav>
-  <!-- Non-breaking spaces (&nbsp;) keep links cleanly spaced horizontally -->
-  <a href="index.html">Home</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="about.html">About Us</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="products.html">Products</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="contact.html">Contact Us</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="community.html">Community and Trade-ins</a>
-</nav>
-  </header>
+    <header>
+        <img src="images/banner.jpg" alt="GamerPlayground Banner" class="banner" width="100%" height="300">
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="index.html">Home</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="about.html">About Us</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="products.html">Products</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="contact.html">Contact Us</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="community.html">Community and Trade-ins</a>
+        </nav>
+    </header>
 
-  <!-- Community and Trade-ins Section -->
-  <section id="community">
-    <h2>Community and Trade-ins</h2>
-    <p>Welcome to the GamerPlayground community! Here, you can connect with fellow gamers, share your experiences, and participate in trade-in events. Our platform allows you to trade your physical game discs with other members, ensuring that you can enjoy a wide variety of games without breaking the bank.</p>
+    <!-- Main Container to wrap sections cleanly -->
+    <div class="community-page-container">
+        <!-- Community Hub Informational Section -->
+        <section id="community">
+            <h2>Community Hub</h2>
+            <p>Welcome to the GamerPlayground community! Here, you can connect with fellow gamers, share your experiences, and participate in trade-in events. Our platform allows you to trade your physical game discs with other members, ensuring that you can enjoy a wide variety of games without breaking the bank.</p>
 
-    <h3>Trade-in Guidelines</h3>
-    <ul>
-      <li>All trade-ins must be in good condition with no major scratches or damage.</li>
-      <li>Members are encouraged to provide honest descriptions of their game discs.</li>
-      <li>Trade-ins are subject to approval by our moderation team.</li>
-    </ul>
+            <h3>Trade-in Guidelines</h3>
+            <ul>
+                <li>All trade-ins must be in good condition with no major scratches or damage.</li>
+                <li>Members are encouraged to provide honest descriptions of their game discs.</li>
+                <li>Trade-ins are subject to approval by our moderation team.</li>
+            </ul>
 
-    <h3>Join the Community</h3>
-    <p>To become a part of our vibrant community, please sign up for an account on our website. Once registered, you can participate in forums, join trade-in events, and stay updated on the latest gaming news.</p>
-  </section>
- <!--  COMMUNITY FORUMS -->
+            <h3>Join the Community</h3>
+            <p>To become a part of our vibrant community, please sign up for an account on our website. Once registered, you can participate in forums, join trade-in events, and stay updated on the latest gaming news.</p>
+        </section>
 
-    <!--  SERVICES (TRADE-IN CENTER) -->
-    <section id="trade">
-        <h2>Trade-In Services & Valuation</h2>
-        <p>Turn your old physical games into cash or store credit to fund your next physical hard disc purchase.</p>
-        
-        <h3>Submit a Trade Valuation Request</h3>
-        <form>
-            <p>
-                <label for="trade-title">Game Title to Sell:</label><br>
-                <input type="text" id="trade-title" required>
-            </p>
-            <p>
-                <label for="trade-condition">Estimated Condition of Disc:</label><br>
-                <input type="radio" id="cond-sealed" name="user-cond" value="sealed"> Brand New / Sealed<br>
-                <input type="radio" id="cond-mint" name="user-cond" value="mint"> Mint (No Scratches)<br>
-                <input type="radio" id="cond-fair" name="user-cond" value="fair"> Fair (Minor Scratches, Plays Fine)
-            </p>
-            <p>
-                <label for="payout-pref">Preferred Payout Method:</label><br>
-                <select id="payout-pref">
-                    <option value="credit">GamerPlayground Store Credit (15% Bonus Value)</option>
-                    <option value="cash">Direct Bank Transfer EFT / Cash</option>
-                </select>
-            </p>
-            <button type="submit">Submit Valuation Request</button>
-        </form>
-    </section>
-    <hr>
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 GamerPlayground | All Rights Reserved</p>
-    <p>Follow us on 
-      <a href="#">Facebook</a> | 
-      <a href="#">Instagram</a> | 
-      <a href="#">Twitter</a>
-    </p>
-  </footer>
+        <!-- Services Section (Trade-in Center) -->
+        <section id="trade">
+            <h2>Trade-In Services & Valuation</h2>
+            <p>Turn your old physical games into cash or store credit to fund your next physical hard disc purchase.</p>
+            
+            <div class="trade-form-card">
+                <h3>Submit a Trade Valuation Request</h3>
+                <form>
+                    <p>
+                        <label for="trade-title">Game Title to Sell:</label>
+                        <input type="text" id="trade-title" required>
+                    </p>
+                    <div class="radio-group">
+                        <label>Estimated Condition of Disc:</label>
+                        <label class="radio-label"><input type="radio" id="cond-sealed" name="user-cond" value="sealed"> Brand New / Sealed</label>
+                        <label class="radio-label"><input type="radio" id="cond-mint" name="user-cond" value="mint"> Mint (No Scratches)</label>
+                        <label class="radio-label"><input type="radio" id="cond-fair" name="user-cond" value="fair"> Fair (Minor Scratches, Plays Fine)</label>
+                    </div>
+                    <p>
+                        <label for="payout-pref">Preferred Payout Method:</label>
+                        <select id="payout-pref">
+                            <option value="credit">GamerPlayground Store Credit (15% Bonus Value)</option>
+                            <option value="cash">Direct Bank Transfer EFT / Cash</option>
+                        </select>
+                    </p>
+                    <button type="submit" class="trade-btn">Submit Valuation Request</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 GamerPlayground | All Rights Reserved</p>
+        <p>Follow us on 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+</body> <!-- Fixed missing closing body tag -->
 </html>
