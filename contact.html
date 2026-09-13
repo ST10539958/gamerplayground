@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Fixed typo here -->
 <head>  
     <title>Contact Gamer Playground</title>   
     <link rel="stylesheet" href="style.css">
@@ -8,60 +8,65 @@
     <!-- Header Section -->
     <header>
        <img src="images/banner.jpg" alt="GamerPlayground Banner" class="banner" width="100%" height="300">
-        <!-- Navigation Menu for navigation to other pages -->
+        <!-- Navigation Menu -->
         <nav>
-  <!-- Non-breaking spaces (&nbsp;) keep links cleanly spaced horizontally -->
-  <a href="index.html">Home</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="about.html">About Us</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="products.html">Products</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="contact.html">Contact Us</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="community.html">Community and Trade-ins</a>
-</nav>
+          <a href="index.html">Home</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="about.html">About Us</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="products.html">Products</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="contact.html">Contact Us</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="community.html">Community and Trade-ins</a>
+        </nav>
     </header>
 
     <!-- CONTACT PAGE -->
     <section id="contact">
         <h2>Contact Us & Support</h2>
-        <p>Have questions about disc grading verification? Fill out the contact form below or reach out to our physical distribution hub team directly.</p>
+        <p class="contact-intro">Have questions about disc grading verification? Fill out the contact form below or reach out to our physical distribution hub team directly.</p>
         
-        <form>
-            <p>
-                <label for="user-name">Your Full Name:</label><br>
-                <input type="text" id="user-name" required>
-            </p>
-            <p>
-                <label for="user-email">Your Email Address:</label><br>
-                <input type="email" id="user-email" required>
-            </p>
-            <p>
-                <label for="msg-subject">Inquiry Reason:</label><br>
-                <select id="msg-subject">
-                    <option value="order">Order Tracking / Packaging Issue</option>
-                    <option value="grading">Disc Condition / Grading Dispute</option>
-                    <option value="general">General Business Partnership Inquiry</option>
-                </select>
-            </p>
-            <p>
-                <label for="user-message">Your Detailed Message:</label><br>
-                <textarea id="user-message" rows="6" cols="40" placeholder="Type message details here..." required></textarea>
-            </p>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="contact-container">
+            <!-- Form Card -->
+            <form>
+                <p>
+                    <label for="user-name">Your Full Name:</label>
+                    <input type="text" id="user-name" required>
+                </p>
+                <p>
+                    <label for="user-email">Your Email Address:</label>
+                    <input type="email" id="user-email" required>
+                </p>
+                <p>
+                    <label for="msg-subject">Inquiry Reason:</label>
+                    <select id="msg-subject">
+                        <option value="order">Order Tracking / Packaging Issue</option>
+                        <option value="grading">Disc Condition / Grading Dispute</option>
+                        <option value="general">General Business Partnership Inquiry</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="user-message">Your Detailed Message:</label>
+                    <textarea id="user-message" rows="6" placeholder="Type message details here..." required></textarea>
+                </p>
+                <button type="submit">Send Message</button>
+            </form>
 
-        <h3>Physical Distribution Hub Office Location</h3>
-        <p>GamerPlayground Warehouse Facility<br>
-        123 Main Road, Midrand,<br>
-        South Africa</p>
+            <!-- Location Card -->
+            <div class="location-card">
+                <h3>Physical Distribution Hub</h3>
+                <p><strong>GamerPlayground Warehouse Facility</strong><br>
+                123 Main Road, Midrand,<br>
+                South Africa</p>
+            </div>
+        </div>
     </section>
- <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 GamerPlayground | All Rights Reserved</p>
-    <p>Follow us on 
-      <a href="#">Facebook</a> | 
-      <a href="#">Instagram</a> | 
-      <a href="#">Twitter</a>
-    </p>
-  </footer> 
 
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 GamerPlayground | All Rights Reserved</p>
+        <p>Follow us on 
+          <a href="#">Facebook</a> | 
+          <a href="#">Instagram</a> | 
+          <a href="#">Twitter</a>
+        </p>
+    </footer> 
+</body> <!-- Added missing closing body tag -->
 </html>

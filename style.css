@@ -222,10 +222,120 @@ li strong {
     border-bottom: 1px solid #2d2d35;
     padding-bottom: 5px;
 }
+/* ==========================================================================
+   8. CONTACT PAGE SPECIFIC STYLES
+   ========================================================================== */
+#contact {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contact-intro {
+    color: #a0aec0;
+    margin-bottom: 30px;
+}
+
+/* Two column setup for Form and Details */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#contact form {
+    flex: 2;
+    min-width: 300px;
+    background-color: #1a1a1e;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #2d2d35;
+}
+
+.location-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #1a1a1e;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #2d2d35;
+    height: fit-content;
+}
+
+/* Form element structural styling */
+#contact form p {
+    margin-bottom: 20px;
+}
+
+#contact label {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Text Inputs, Select Elements, and Textareas */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact select,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #121214;
+    border: 1px solid #2d2d35;
+    color: #ffffff;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focused elements light up red instead of default blue browser outline */
+#contact input:focus,
+#contact select:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #ff4757;
+    box-shadow: 0 0 5px rgba(255, 71, 87, 0.3);
+}
+
+#contact textarea {
+    resize: vertical; /* Permits vertical height growth only */
+}
+
+/* Contact Specific Submit Button */
+#contact form button[type="submit"] {
+    background-color: #ff4757;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#contact form button[type="submit"]:hover {
+    background-color: #ff6b81;
+}
+
+.location-card h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff4757;
+    padding-bottom: 5px;
+}
+
+.location-card p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
 
 
 /* ==========================================================================
-   7. FOOTER
+   8. FOOTER
    ========================================================================== */
 footer {
     text-align: center;
