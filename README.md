@@ -93,3 +93,7 @@ To scale GamerPlayground from a student prototype into a live environment, the f
 
 
 3. Google Gemini for AI created website banner
+
+4. Murphy, C. and Persson, N. (2009) HTML and CSS Web Standards Solutions: A Web Standardistas' Approach. 
+
+5. Meyer, E.A. (2011) CSS Pocket Reference. 4th edn. O'Reilly Media
