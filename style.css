@@ -165,9 +165,67 @@ li strong {
     padding: 0 15px 15px 15px;
     font-size: 0.95rem;
 }
+/* ==========================================================================
+   6. ABOUT PAGE SPECIFIC STYLES
+   ========================================================================== */
+#about {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#about h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin: 30px 0 10px 0;
+    font-weight: 600;
+}
+
+#about p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+/* Custom layout for Target Audience Breakdown */
+#about ul {
+    list-style-type: none; /* Removes standard bullet points */
+    padding: 0;
+    background-color: transparent; /* Overrides the generic list background */
+    border: none;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#about li {
+    background-color: #1a1a1e;
+    border: 1px solid #2d2d35;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 0; /* Clears list margin */
+    transition: border-color 0.3s ease;
+}
+
+#about li:hover {
+    border-color: #ff4757;
+}
+
+#about li strong {
+    display: block;
+    color: #ff4757;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #2d2d35;
+    padding-bottom: 5px;
+}
+
 
 /* ==========================================================================
-   6. FOOTER
+   7. FOOTER
    ========================================================================== */
 footer {
     text-align: center;
