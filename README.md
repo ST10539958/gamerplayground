@@ -98,5 +98,4 @@ R1,500 - R4,000MonthlyOutsourced server updates and patch bug fixing maintenance
 * Google Gemini for AI created website banner
 * Murphy, C. and Persson, N. (2009) *HTML and CSS Web Standards Solutions: A Web Standardistas' Approach*. Apress, Berkeley, California.
 * Meyer, E.A. (2011) *CSS Pocket Reference*. 4th edn. O'Reilly Media, Inc., California.
-
-5. Meyer, E.A. (2011) CSS Pocket Reference. 4th edn. O'Reilly Media
+* Meyer, E.A. (2011) CSS Pocket Reference. 4th edn. O'Reilly Media
