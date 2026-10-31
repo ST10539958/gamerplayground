@@ -156,7 +156,7 @@ const GAMES_DATABASE = [
     { id: 11, title: "2010 FIFA World Cup South Africa", platform: "PC DVD-ROM", note: "Official Release", img: "images/2010_Fifa_World_Cup_South_Africa_-_English_f.jpg" },
     { id: 12, title: "Zoo Tycoon 2: Ultimate Collection", platform: "PC DVD-ROM", note: "Jewel Case", img: "images/zoo_tycoon_2_-_zoodirektor_sammlung_d.jpg" }
 ];
-
+// Ensure image file names are clean, lower-case, hyphenated and descriptive for search indexers
 document.addEventListener("DOMContentLoaded", () => {
     renderDynamicCatalog(GAMES_DATABASE);
     initializeSearchAndSort();
@@ -195,6 +195,7 @@ function renderDynamicCatalog(itemsToRender) {
     // Rebind shopping cart events and image lightbox handlers dynamically to new elements
     if (typeof initializeShoppingEngine === "function") initializeShoppingEngine();
     if (typeof initializeInteractiveLightbox === "function") initializeInteractiveLightbox();
+
 }
 
 /* --------------------------------------------------------------------------
