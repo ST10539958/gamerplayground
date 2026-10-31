@@ -532,3 +532,45 @@ footer a:hover {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+/* ==========================================================================
+   12. DYNAMIC CONTENT ENGINE UTILITIES
+   ========================================================================== */
+.control-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    background-color: #1a1a1e;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #2d2d35;
+}
+
+#catalog-search {
+    flex: 2;
+    min-width: 250px;
+    padding: 12px;
+    background-color: #121214;
+    border: 1px solid #2d2d35;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#catalog-sort {
+    flex: 1;
+    min-width: 180px;
+    padding: 12px;
+    background-color: #121214;
+    border: 1px solid #2d2d35;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#catalog-search:focus,
+#catalog-sort:focus {
+    outline: none;
+    border-color: #ff4757;
+}
