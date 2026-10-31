@@ -1,0 +1,24 @@
+# ==========================================================================
+# GAMERPLAYGROUND ROBOTS CONFIGURATION RULESET
+# ==========================================================================
+
+# Apply rules globally to all automated search engine spider web crawlers
+User-agent: *
+
+# Permitted Crawler Directories
+Allow: /index.html
+Allow: /about.html
+Allow: /products.html
+Allow: /contact.html
+Allow: /community.html
+Allow: /style.css
+Allow: javascript/script.js
+Allow: /images/
+
+# Prevent Crawlers from indexing temporary files, system backups or administrative drafts
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /drafts/
+
+# Explicitly declare the precise deployment destination matching the Sitemap location index blueprint
+Sitemap: https://st10539958.github.io/gamerplayground/

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ==========================================================================
+     GAMERPLAYGROUND OFFICIAL XML STRUCTURE INDEX MAP
+     ========================================================================== -->
+<urlset xmlns="http://sitemaps.org">
+
+    <!-- 1. The Core Landing Screen Canvas -->
+    <url>
+        <loc><?xml version="1.0" encoding="UTF-8"?>
+<!-- ==========================================================================
+     GAMERPLAYGROUND OFFICIAL XML STRUCTURE INDEX MAP
+     ========================================================================== -->
+<urlset xmlns="http://sitemaps.org">
+
+    <!-- 1. The Core Landing Screen Canvas -->
+    <url>
+        <loc>https://st10539958.github.io/gamerplayground/</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- 2. The Product Grid Catalog Canvas -->
+    <url>
+        <loc>https://st10539958.github.io/gamerplayground/</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- 3. The Community & Trade-in Appraisal Form Hub -->
+    <url>
+        <loc>https://st10539958.github.io/gamerplayground/</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- 4. The Organizational History Profile Screen -->
+    <url>
+        <loc>https://st10539958.github.io/gamerplayground/</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.50</priority>
+    </url>
+
+    <!-- 5. The Support Communications Grid Screen -->
+    <url>
+        <loc>https://st10539958.github.io/gamerplayground/</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.50</priority>
+    </url>
+
+</urlset>
+</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- 2. The Product Grid Catalog Canvas -->
+    <url>
+        <loc>https://st10539958.github.io/gamerplayground/</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- 3. The Community & Trade-in Appraisal Form Hub -->
+    <url>
+        <loc>https://st10539958.github.io/gamerplayground/</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- 4. The Organizational History Profile Screen -->
+    <url>
+        <loc>https://st10539958.github.io/gamerplayground/</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.50</priority>
+    </url>
+
+    <!-- 5. The Support Communications Grid Screen -->
+    <url>
+        <loc>https://st10539958.github.io/gamerplayground/</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.50</priority>
+    </url>
+
+</urlset>
