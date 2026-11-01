@@ -22,31 +22,43 @@ function initializeShoppingEngine() {
 
     const navBar = document.querySelector("nav");
     if (navBar) {
-        // Advanced DOM Manipulation: Constructing a reactive UI badge completely in memory
-        const cartBadge = document.createElement("span");
-        cartBadge.id = "cart-counter-display";
-        cartBadge.className = "fade-in-element";
-        cartBadge.innerHTML = ` &nbsp;&nbsp;|&nbsp;&nbsp; 🛒 Cart: <strong style="color: #ff4757;">0</strong> items`;
-        navBar.appendChild(cartBadge);
+        // 🔥 CRITICAL FIX: Check if the cart display already exists on the page
+        let cartBadge = document.getElementById("cart-counter-display");
         
+        // Only build and append a new one if it does not exist yet!
+        if (!cartBadge) {
+            cartBadge = document.createElement("span");
+            cartBadge.id = "cart-counter-display";
+            cartBadge.className = "fade-in-element";
+            navBar.appendChild(cartBadge);
+        }
+        
+        // Reset its HTML value cleanly to prevent duplications
+        cartBadge.innerHTML = ` &nbsp;&nbsp;|&nbsp;&nbsp; 🛒 Cart: <strong style="color: #ff4757;">0</strong> items`;
+        
+        // Clear old event listeners by cloning buttons before binding (prevents multi-click multi-increment bugs)
         buyButtons.forEach((button, index) => {
-            button.addEventListener("click", () => {
+            const newButton = button.cloneNode(true);
+            button.parentNode.replaceChild(newButton, button);
+            
+            newButton.addEventListener("click", () => {
                 cartCount++;
                 const counterValue = cartBadge.querySelector("strong");
                 if (counterValue) counterValue.textContent = cartCount;
                 
                 // Interaction Feedback Animations
-                button.textContent = "🎮 Added!";
-                button.classList.add("btn-success-flash");
+                newButton.textContent = "🎮 Added!";
+                newButton.classList.add("btn-success-flash");
                 
                 setTimeout(() => {
-                    button.textContent = "Buy Now";
-                    button.classList.remove("btn-success-flash");
+                    newButton.textContent = "Buy Now";
+                    newButton.classList.remove("btn-success-flash");
                 }, 1000);
             });
         });
     }
 }
+
 
 /* --------------------------------------------------------------------------
    🖼️ 2. INTERACTIVE GALLEY LIGHTBOX INTERFACE
@@ -194,7 +206,7 @@ function renderDynamicCatalog(itemsToRender) {
     });
 
     // Rebind shopping cart events and image lightbox handlers dynamically to new elements
-    if (typeof initializeShoppingEngine === "function") initializeShoppingEngine();
+    //if (typeof initializeShoppingEngine === "function") initializeShoppingEngine();
     if (typeof initializeInteractiveLightbox === "function") initializeInteractiveLightbox();
 
 }
