@@ -196,7 +196,7 @@ function initializeInteractiveLightbox() {
    -------------------------------------------------------------------------- */
 function initializeMapWidget() {
     const locationSection = document.querySelector(".location-card");
-    if (!locationSection || document.getElementById("interactive-map-frame")) return;
+    if (!locationSection) return;
 
     const mapContainer = document.createElement("div");
     mapContainer.id = "interactive-map-frame";
@@ -212,7 +212,7 @@ function initializeMapWidget() {
             style="border:0; display:block;"
             loading="lazy"
             allowfullscreen
-            src="https://google.com">
+            src="https://maps.google.com/maps?q=Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed">
         </iframe>
     `;
 
