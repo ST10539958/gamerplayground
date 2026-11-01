@@ -86,7 +86,7 @@ function initializeInteractiveLightbox() {
 }
 
 /* --------------------------------------------------------------------------
-   🗺️ 3. INTERACTIVE LOCATION MAP IMPLEMENTATION
+   🗺️ 3. INTERACTIVE LOCATION MAP IMPLEMENTATION 
    -------------------------------------------------------------------------- */
 function initializeMapWidget() {
     const locationSection = document.querySelector(".location-card");
@@ -98,20 +98,22 @@ function initializeMapWidget() {
     mapContainer.style.marginTop = "20px";
     mapContainer.style.borderRadius = "6px";
     mapContainer.style.overflow = "hidden";
+    mapContainer.style.border = "1px solid #2d2d35"; // Matches your theme borders
 
-    // Embed an asynchronous localized high-resolution Google Maps platform lookup framework 
+    // FIX: Using the explicit maps.google.com embed endpoint with output=embed parameter
     mapContainer.innerHTML = `
         <iframe 
             width="100%" 
             height="250" 
-            frameborder="0" 
-            style="border:0;" 
+            style="border:0; display:block;" 
             src="https://google.com" 
-            allowfullscreen>
+            allowfullscreen="" 
+            loading="lazy">
         </iframe>`;
     
     locationSection.appendChild(mapContainer);
 }
+
 
 /* --------------------------------------------------------------------------
    📝 4. INTERACTIVE SUBMISSION INTERCEPTORS
