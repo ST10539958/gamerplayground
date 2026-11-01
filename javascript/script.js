@@ -92,25 +92,24 @@ function initializeMapWidget() {
     const locationSection = document.querySelector(".location-card");
     if (!locationSection) return;
 
-    // Advanced DOM Manipulation: Dynamically assembling an isolated iframe widget wrapper
     const mapContainer = document.createElement("div");
     mapContainer.id = "interactive-map-frame";
     mapContainer.style.marginTop = "20px";
     mapContainer.style.borderRadius = "6px";
     mapContainer.style.overflow = "hidden";
-    mapContainer.style.border = "1px solid #2d2d35"; // Matches your theme borders
+    mapContainer.style.border = "1px solid #2d2d35";
 
-    // FIX: Using the explicit maps.google.com embed endpoint with output=embed parameter
     mapContainer.innerHTML = `
-        <iframe 
-            width="100%" 
-            height="250" 
-            style="border:0; display:block;" 
-            src="https://google.com" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>`;
-    
+        <iframe
+            width="100%"
+            height="250"
+            style="border:0; display:block;"
+            loading="lazy"
+            allowfullscreen
+            src="https://maps.google.com/maps?q=Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+    `;
+
     locationSection.appendChild(mapContainer);
 }
 
