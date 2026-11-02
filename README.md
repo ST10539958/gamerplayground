@@ -75,8 +75,27 @@ The platform structure consists of the following modular files, linked horizonta
 * **Reactive Cart Counter:** Manages global memory state to count product selection clicks and display real-time numeric badges in navigation layers alongside flashing visual user feedback.
 
 ---
+---
 
-## 5. On-Page SEO Architecture & Search Optimization
+## 5. Advanced JavaScript & Site Functionality
+
+To transition GamerPlayground from a collection of presentation layers into a highly interactive, dynamic web prototype, a client-side execution script (`script.js`) was engineered. This logic layout layer is securely bound to the DOM document model via single unified lifecycle wrappers (`DOMContentLoaded`).
+
+### 📦 4.1 Dynamic Data Storage & Client-Side Catalog Processing
+* **Decoupled Data Architecture:** Product items are completely removed from static HTML structures and maintained as a centralized database array layer (`GAMES_DATABASE`). 
+* **DOM Factory Generation:** Programmatic loops (`forEach`) map over active inventory payload fields to generate structural, fluid grid content blocks natively, minimizing repetitive code footprints.
+
+### 🔍 4.2 Interactive Query Filtering & Sorting Controls
+* **Real-Time Input Matching:** Attaches text tracking event input hooks (`input`) to the search bar. This handles real-time filter sweeps across game titles and console platform strings simultaneously.
+* **Alphanumeric Content Sequencing:** Runs standard sorting algorithms (`.sort` and `.localeCompare`) to arrange visible components cleanly across ascending indices (`A-Z`), descending tracks (`Z-A`), or categorized arrays grouped strictly by console type.
+
+### 🎮 4.3 Functional UI Components & State Tracking
+* **Reactive Cart Counter:** Manages global runtime variables to keep track of product clicks. It injects a uniform shopping cart summary widget dynamically into the top menu bar, displaying continuous numeric counter updates alongside flashing visual button success cues (`🎮 Added!`).
+* **Overlay Lightbox Image Inspector:** Scans dynamic product cards and hooks click listeners onto image elements. When triggered, it builds a fixed overlay modal modal backdrop canvas (`#custom-lightbox-modal`) in real-time, allowing clear inspection of cover box designs.
+* **Asynchronous Location Map Embedding:** Evaluates layout location wrappers to automatically build an isolated, non-blocking iframe element. This securely embeds an optimized Google Maps location layout targeting local distribution warehouse coordinates.
+* **Form Action Interceptors:** Leverages event handling methods to manage valuation submissions. It uses validation structures to check data status parameters, blocks unstyled browser page drops using event prevention rules (`e.preventDefault()`), and wipes fields clean via standard reset triggers (`.reset()`).
+
+## 6. On-Page SEO Architecture & Search Optimization
 
 * **Keyword Strategy:** Targeted search clusters (`physical game discs`, `gaming media preservation`, `buy used console games`) integrated directly into semantic page copy.
 * **Unique Meta Configurations:** Custom title tags, meta keyword indices, and unique meta descriptions injected into each sub-page `<head>` container to explicitly define layouts for search crawl spiders.
@@ -87,7 +106,7 @@ The platform structure consists of the following modular files, linked horizonta
 
 ---
 
-## 6. Hosting & Maintenance Budget (Projections)
+## 7. Hosting & Maintenance Budget (Projections)
 
 To scale GamerPlayground from a student prototype into a live production environment, the following infrastructure budget has been projected:
 
@@ -101,7 +120,7 @@ To scale GamerPlayground from a student prototype into a live production environ
 
 ---
 
-## 7. Deployment Instructions
+## 8. Deployment Instructions
 
 1. Download the workspace bundle containing all `.html` pages, `style.css`, `script.js`, `robots.txt`, and `sitemap.xml`.
 2. Ensure your workspace structure houses an `images/` folder containing your system asset imagery.
@@ -110,7 +129,7 @@ To scale GamerPlayground from a student prototype into a live production environ
 
 ---
 
-## 8. Changelog
+## 9. Changelog
 
 ### Phase 1: Pure HTML Architecture (Baseline Infrastructure)
 #### Added
@@ -151,7 +170,7 @@ To scale GamerPlayground from a student prototype into a live production environ
 #### Removed
 * Removed all repetitive, hardcoded HTML product cards from `products.html` to prevent code duplication.
 
-## 9. References
+## 10. References
 
 
 Phase 1 (HTML Structures)
