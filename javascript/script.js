@@ -225,8 +225,7 @@ function initializeMapWidget() {
 function initializeValidationEngines() {
 const contactForm = document.querySelector("#contact form");
 const tradeForm = document.querySelector("#trade form");
-//if (contactForm && !contactForm.dataset.hooked) {
-/*
+if (contactForm && !contactForm.dataset.hooked) {
 contactForm.dataset.hooked = "true";
 contactForm.addEventListener("submit", (e) => {
 e.preventDefault();
@@ -234,7 +233,6 @@ alert("🎮 Message Transmitted!\n\nA distribution hub coordinator will contact 
 contactForm.reset();
 });
 }
-*/
 if (tradeForm && !tradeForm.dataset.hooked) {
 tradeForm.dataset.hooked = "true";
 tradeForm.addEventListener("submit", (e) => {
