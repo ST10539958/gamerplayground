@@ -333,53 +333,59 @@ li strong {
     line-height: 1.8;
 }
 /* ==========================================================================
-   9. COMMUNITY & TRADE-IN SPECIFIC STYLES
+   9. RESPONSIVE COMMUNITY & TRADE-IN STYLES
    ========================================================================== */
-.community-page-container {
-    max-width: 1100px;
+.community-layout-wrapper {
+    max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
+    
+    /* Responsive Setup */
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to drop underneath when space runs out */
+    gap: 40px;      /* Spacing between the text column and the form card */
 }
 
-#community, #trade {
-    margin-bottom: 50px;
+/* Base style rules for both major panels */
+#community {
+    flex: 1.2;          /* Text takes slightly more breathing room on desktop */
+    min-width: 320px;   /* Prevents crushing text on tiny smartphone screens */
 }
 
-#community h3, #trade h3 {
-    color: #ffffff;
-    font-size: 1.3rem;
-    margin: 25px 0 10px 0;
+#trade {
+    flex: 1;            /* Form occupies equal layout weight */
+    min-width: 300px;   /* Form snaps cleanly into place */
 }
 
-#community p, #trade p {
-    color: #cbd5e1;
-    margin-bottom: 15px;
-}
-
-/* Valuation Form Container Styling */
+/* Valuation Card Optimization */
 .trade-form-card {
     background-color: #1a1a1e;
     border: 1px solid #2d2d35;
-    padding: 30px;
+    padding: 25px;
     border-radius: 8px;
-    margin-top: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.trade-form-card h3 {
-    margin-top: 0 !important;
-    border-bottom: 1px solid #2d2d35;
-    padding-bottom: 10px;
+/* Radio button padding optimization for finger taps on mobile screens */
+.radio-group {
     margin-bottom: 20px;
 }
 
-/* Form Elements */
-#trade label {
-    display: block;
-    color: #ffffff;
-    font-weight: 600;
-    margin-bottom: 8px;
+.radio-label {
+    display: flex !important;
+    align-items: center;
+    padding: 8px 0; /* Expanded touch targets for easier mobile selection */
+    cursor: pointer;
+    color: #cbd5e1;
 }
 
+.radio-label input[type="radio"] {
+    margin-right: 12px;
+    transform: scale(1.2); /* Makes radio circles larger for finger inputs */
+    accent-color: #ff4757;
+}
+
+/* Ensure form controls expand fully within their containers */
 #trade input[type="text"],
 #trade select {
     width: 100%;
@@ -389,41 +395,15 @@ li strong {
     color: #ffffff;
     border-radius: 4px;
     font-size: 1rem;
-    margin-bottom: 20px;
+    box-sizing: border-box; /* Crucial to keep fields from breaking out of boxes */
 }
 
-#trade input[type="text"]:focus,
-#trade select:focus {
-    outline: none;
-    border-color: #ff4757;
-}
-
-/* Radio Button Layout Tuning */
-.radio-group {
-    margin-bottom: 20px;
-}
-
-.radio-label {
-    display: flex !important;
-    align-items: center;
-    font-weight: normal !important;
-    color: #cbd5e1 !important;
-    cursor: pointer;
-    margin-bottom: 8px;
-}
-
-.radio-label input[type="radio"] {
-    margin-right: 10px;
-    accent-color: #ff4757; /* Colors the radio dot red on modern browsers */
-    transform: scale(1.1);
-}
-
-/* Form Action Button */
 .trade-btn {
+    width: 100%; /* Makes button hit full width for natural mobile screen taps */
     background-color: #ff4757;
     color: #ffffff;
     border: none;
-    padding: 12px 24px;
+    padding: 14px;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 4px;
@@ -434,6 +414,7 @@ li strong {
 .trade-btn:hover {
     background-color: #ff6b81;
 }
+
 
 
 /* ==========================================================================
